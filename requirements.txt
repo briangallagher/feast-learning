@@ -1,0 +1,33 @@
+# Feast Learning Path - Python Dependencies
+# Install in an RHOAI workbench or local venv:
+#   pip install -r requirements.txt
+
+# Core Feast (matches RHOAI 3.4 distribution)
+feast[postgres,redis]
+
+# Feast extras for specific modules
+feast[ray]          # Module 06: Ray compute engine
+feast[mcp]          # Module 09: MCP for AI agents (upstream only)
+
+# Data processing
+pandas
+pyarrow
+duckdb
+
+# ML (for end-to-end scenarios)
+scikit-learn
+xgboost
+
+# OpenLineage (Module 07)
+openlineage-python
+
+# Vector/RAG (Module 08)
+sentence-transformers
+
+# KFP (Module 11)
+kfp
+
+# Notebook utilities
+jupyter
+ipywidgets
+tabulate
